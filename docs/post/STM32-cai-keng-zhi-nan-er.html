@@ -81,15 +81,6 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <blockquote>
 <p>这个是真的坑。一点假都没有</p>
 </blockquote>
-<p>在FreeRTOS中消息队列是一种常用的设置，但是有以下注意</p>
-<blockquote>
-<p>1  xQueueSend(TEST_Queue,&amp;send_data,1); 和  xQueueReceive(TEST_Queue,&amp;buffer,portMAX_DELAY);  只能发送和接受一条信息！！！！对，没错，一条信息，可以设置，接收或发送一串字符或数据，如下图</p>
-<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/447ddf882a92528acf019604624b0db27474244909519470347b9b6972890c9b/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f6450446f616342533335327067574f2e706e67"><img src="https://camo.githubusercontent.com/447ddf882a92528acf019604624b0db27474244909519470347b9b6972890c9b/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f6450446f616342533335327067574f2e706e67" alt=" 2024-11-21 214840.png" data-canonical-src="https://s2.loli.net/2024/11/21/dPDoacBS352pgWO.png" style="max-width: 100%;"></a></p>
-</blockquote>
-<blockquote>
-<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8aa2c1d3d2b0a708e3efd1df12dd67f979e6eb1547c58c9bdddfae65b34addd5/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f3164495a7468546c3677344f5865622e706e67"><img src="https://camo.githubusercontent.com/8aa2c1d3d2b0a708e3efd1df12dd67f979e6eb1547c58c9bdddfae65b34addd5/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f3164495a7468546c3677344f5865622e706e67" alt=" 2024-11-21 214858.png" data-canonical-src="https://s2.loli.net/2024/11/21/1dIZthTl6w4OXeb.png" style="max-width: 100%;"></a></p>
-</blockquote>
-<p>接下来就是本次我要揭露的最大的一个坑</p>
 <blockquote>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c16b7907c231e697a6051d6f935b7b0180f9c86cbf50005ffc79691ee8aa8caf/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f54524a666c6948736d6b59647a62472e706e67"><img src="https://camo.githubusercontent.com/c16b7907c231e697a6051d6f935b7b0180f9c86cbf50005ffc79691ee8aa8caf/68747470733a2f2f73322e6c6f6c692e6e65742f323032342f31312f32312f54524a666c6948736d6b59647a62472e706e67" alt=" 2024-11-21 215448.png" data-canonical-src="https://s2.loli.net/2024/11/21/TRJfliHsmkYdzbG.png" style="max-width: 100%;"></a></p>
 </blockquote>
